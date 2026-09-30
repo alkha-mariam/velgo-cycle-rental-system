@@ -1,16 +1,89 @@
-# React + Vite
+# 🚲 VelGo – Cycle Rental System
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A full-stack cycle rental web application developed using React.js, Node.js, Express.js, and MySQL.
 
-Currently, two official plugins are available:
+## 📌 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+VelGo is a cycle rental system that allows users to explore available cycles, view rental plans, make bookings, view booking history, and cancel bookings.
 
-## React Compiler
+The project consists of a React frontend, an Express/Node.js backend, and a MySQL database.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the Oxlint configuration
+- Home page
+- About page
+- Cycle listing
+- Pricing plans
+- Cycle booking
+- Booking history
+- Cancel booking
+- Contact page
+- React Router navigation
+- REST API integration
+- MySQL database
+- Responsive user interface
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🛠️ Technologies Used
+
+### Frontend
+
+- React.js
+- JavaScript
+- HTML
+- CSS
+- React Router
+- Vite
+
+### Backend
+
+- Node.js
+- Express.js
+- CORS
+- Fetch API
+
+### Database
+
+- MySQL
+- MySQL2
+- XAMPP
+- phpMyAdmin
+
+## 📂 Project Structure
+
+```text
+cycle-rental-system/
+│
+├── backend/
+│   ├── .env.example
+│   ├── config/
+│   │   └── db.js
+│   ├── controllers/
+│   │   └── bookingController.js
+│   ├── routes/
+│   │   └── bookingRoutes.js
+│   ├── package.json
+│   └── server.js
+│
+├── public/
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── CycleCard.jsx
+│   │   ├── Footer.jsx
+│   │   └── Navbar.jsx
+│   ├── pages/
+│   │   ├── About.jsx
+│   │   ├── Booking.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Cycles.jsx
+│   │   ├── History.jsx
+│   │   ├── Home.jsx
+│   │   ├── NotFound.jsx
+│   │   └── Pricing.jsx
+│   └── styles/
+│
+├── database.sql
+├── package.json
+├── README.md
+└── vite.config.js
