@@ -1,14 +1,14 @@
-# 🚲 VelGo – Cycle Rental System
+# VelGo – Cycle Rental System
 
 A full-stack cycle rental web application developed using React.js, Node.js, Express.js, and MySQL.
 
-## 📌 Project Overview
+## Project Overview
 
 VelGo is a cycle rental system that allows users to explore available cycles, view rental plans, make bookings, view booking history, and cancel bookings.
 
 The project consists of a React frontend, an Express/Node.js backend, and a MySQL database.
 
-## ✨ Features
+## Features
 
 - Home page
 - About page
@@ -48,7 +48,7 @@ The project consists of a React frontend, an Express/Node.js backend, and a MySQ
 - XAMPP
 - phpMyAdmin
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 cycle-rental-system/
