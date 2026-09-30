@@ -1,0 +1,448 @@
+.about-page {
+  background-color: var(--black);
+  color: var(--white);
+  overflow: hidden;
+}
+
+.about-container {
+  width: min(1200px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.about-hero-new {
+  min-height: 650px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.95) 0%,
+      rgba(0, 0, 0, 0.78) 45%,
+      rgba(0, 0, 0, 0.25) 100%
+    ),
+    url("https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1800&q=85")
+    center / cover;
+}
+
+.about-hero-overlay {
+  width: 100%;
+}
+
+.about-hero-content-new {
+  width: min(1200px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.about-eyebrow {
+  color: var(--lime);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+
+.about-hero-content-new h1 {
+  font-size: clamp(52px, 7vw, 92px);
+  line-height: 0.95;
+  letter-spacing: -3px;
+  font-weight: 800;
+  margin: 0 0 28px;
+  max-width: 800px;
+}
+
+.about-hero-content-new h1 span {
+  color: var(--lime);
+}
+
+.about-hero-text {
+  max-width: 560px;
+  color: var(--light-gray);
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+
+.about-hero-button,
+.about-cta-button {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: var(--lime);
+  color: var(--black);
+  border: 2px solid var(--lime);
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.about-hero-button:hover,
+.about-cta-button:hover {
+  background-color: transparent;
+  color: var(--lime);
+  transform: translateY(-2px);
+}
+
+/* =========================
+   STORY
+========================= */
+
+.about-story-section {
+  padding: 110px 0;
+  background-color: var(--black);
+}
+
+.about-section-heading {
+  margin-bottom: 55px;
+}
+
+.about-section-heading h2,
+.about-offer-heading h2 {
+  font-size: clamp(40px, 5vw, 64px);
+  line-height: 1;
+  letter-spacing: -2px;
+  margin: 0;
+}
+
+.about-section-heading h2 span,
+.about-offer-heading h2 span,
+.about-bottom-cta h2 span {
+  color: var(--lime);
+}
+
+.about-bento-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.about-bento-card {
+  background-color: var(--dark);
+  border: 1px solid #252525;
+  border-radius: 12px;
+  padding: 35px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.about-bento-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--lime);
+}
+
+.origin-card {
+  grid-row: span 2;
+  min-height: 450px;
+}
+
+.about-card-label {
+  color: var(--gray);
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+
+.about-bento-card h3 {
+  color: var(--white);
+  font-size: 30px;
+  margin-bottom: 18px;
+}
+
+.about-bento-card p {
+  color: var(--light-gray);
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 620px;
+}
+
+.about-origin-year {
+  position: absolute;
+  bottom: 30px;
+  right: 35px;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.about-origin-year strong {
+  color: var(--lime);
+  font-size: 48px;
+  line-height: 1;
+}
+
+.about-origin-year span {
+  color: var(--gray);
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-top: 5px;
+}
+
+.about-bento-icon {
+  font-size: 42px;
+  color: var(--lime);
+  margin-bottom: 20px;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.about-stats-section {
+  position: relative;
+  min-height: 430px;
+  background-color: var(--dark);
+}
+
+.about-stats-image {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("https://images.unsplash.com/photo-1502744688674-c619d1586c9e?auto=format&fit=crop&w=1800&q=85")
+    center / cover;
+  opacity: 0.75;
+}
+
+.about-stats-overlay {
+  position: relative;
+  z-index: 1;
+  padding: 90px 0;
+}
+
+.about-stats-heading h2 {
+  font-size: 48px;
+  margin: 0 0 55px;
+}
+
+.about-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.about-stat {
+  border-left: 2px solid var(--lime);
+  padding-left: 20px;
+}
+
+.about-stat strong {
+  display: block;
+  color: var(--lime);
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.about-stat span {
+  color: var(--light-gray);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+/* =========================
+   WHAT WE OFFER
+========================= */
+
+.about-offer-section {
+  padding: 110px 0;
+  background-color: var(--black);
+}
+
+.about-offer-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: flex-end;
+  margin-bottom: 60px;
+}
+
+.about-offer-heading > p {
+  max-width: 420px;
+  color: var(--gray);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.about-offer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.about-offer-card {
+  min-height: 330px;
+  background-color: var(--dark);
+  border: 1px solid #252525;
+  border-radius: 12px;
+  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.about-offer-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--lime);
+}
+
+.about-offer-number {
+  color: var(--gray);
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.about-offer-icon {
+  font-size: 40px;
+  margin: 35px 0 20px;
+}
+
+.about-offer-card h3 {
+  font-size: 25px;
+  margin: 0 0 12px;
+}
+
+.about-offer-card p {
+  color: var(--gray);
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.about-offer-card a {
+  margin-top: auto;
+  color: var(--lime);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.about-offer-card a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   BOTTOM CTA
+========================= */
+
+.about-bottom-cta {
+  padding: 110px 0;
+  background-color: var(--dark);
+  border-top: 1px solid #222;
+}
+
+.about-bottom-cta h2 {
+  font-size: clamp(45px, 6vw, 75px);
+  line-height: 1;
+  letter-spacing: -3px;
+  margin: 0 0 35px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+  .about-bento-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .origin-card {
+    grid-row: auto;
+    min-height: 380px;
+  }
+
+  .about-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+  }
+
+  .about-offer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero-new {
+    min-height: 580px;
+  }
+
+  .about-hero-content-new {
+    padding: 70px 0;
+  }
+
+  .about-hero-content-new h1 {
+    letter-spacing: -2px;
+  }
+
+  .about-story-section,
+  .about-offer-section,
+  .about-bottom-cta {
+    padding: 75px 0;
+  }
+
+  .about-bento-card {
+    padding: 25px;
+  }
+
+  .about-card-label {
+    margin-bottom: 45px;
+  }
+
+  .about-origin-year {
+    position: static;
+    margin-top: 35px;
+    text-align: left;
+  }
+
+  .about-stats-overlay {
+    padding: 70px 0;
+  }
+
+  .about-stats-heading h2 {
+    font-size: 38px;
+  }
+
+  .about-stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-offer-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container,
+  .about-hero-content-new {
+    width: min(100% - 30px, 1200px);
+  }
+
+  .about-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-stat strong {
+    font-size: 40px;
+  }
+
+  .about-hero-button,
+  .about-cta-button {
+    width: 100%;
+    text-align: center;
+  }
+}

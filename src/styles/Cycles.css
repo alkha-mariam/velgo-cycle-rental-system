@@ -1,0 +1,292 @@
+/* ================================
+   CYCLES PAGE
+================================ */
+
+.cycles {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black);
+}
+
+
+/* ================================
+   HERO SECTION
+================================ */
+
+.cycles-hero {
+  padding: 90px 20px;
+  background:
+    linear-gradient(
+      135deg,
+      #0b0b0b 0%,
+      #151515 50%,
+      #0b0b0b 100%
+    );
+
+  border-bottom: 1px solid #222;
+}
+
+.cycles-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cycles-hero .hero-label {
+  color: var(--lime);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+
+.cycles-hero h1 {
+  margin: 0 0 15px;
+  font-size: 56px;
+  line-height: 1.1;
+  font-weight: 800;
+  color: var(--white);
+}
+
+.cycles-hero p:last-child {
+  margin: 0;
+  font-size: 19px;
+  color: var(--gray);
+}
+
+
+/* ================================
+   FILTER SECTION
+================================ */
+
+.cycles-filter {
+  padding: 45px 20px;
+  background-color: var(--dark);
+  border-bottom: 1px solid #222;
+}
+
+.cycles-filter .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cycles-filter h2 {
+  margin: 0 0 25px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.filter-btn {
+  min-width: 105px;
+  padding: 11px 22px;
+
+  background-color: var(--black);
+  color: var(--gray);
+
+  border: 1px solid #333;
+  border-radius: 30px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.filter-btn:hover {
+  color: var(--lime);
+  border-color: var(--lime);
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background-color: var(--lime);
+  color: var(--black);
+  border-color: var(--lime);
+}
+
+
+/* ================================
+   CYCLES SECTION
+================================ */
+
+.cycles-grid-section {
+  flex: 1;
+  padding: 70px 20px 90px;
+  background-color: var(--black);
+}
+
+.cycles-grid-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* ================================
+   SECTION HEADING
+================================ */
+
+.cycles-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+
+  margin-bottom: 35px;
+}
+
+.cycles-heading h2 {
+  margin: 0 0 8px;
+
+  font-size: 32px;
+  font-weight: 700;
+
+  color: var(--white);
+}
+
+.cycles-heading p {
+  margin: 0;
+
+  font-size: 15px;
+  color: var(--gray);
+}
+
+.cycles-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 15px;
+
+  background-color: var(--dark);
+  color: var(--lime);
+
+  border: 1px solid #333;
+  border-radius: 20px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+
+/* ================================
+   CYCLE GRID
+================================ */
+
+.cycles-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 24px;
+}
+
+
+/* ================================
+   NO CYCLES
+================================ */
+
+.no-cycles {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.no-cycles h3 {
+  margin: 0 0 10px;
+
+  font-size: 24px;
+  color: var(--white);
+}
+
+.no-cycles p {
+  margin: 0;
+
+  color: var(--gray);
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1100px) {
+  .cycles-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+
+@media (max-width: 900px) {
+  .cycles-hero h1 {
+    font-size: 46px;
+  }
+
+  .cycles-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+@media (max-width: 650px) {
+  .cycles-hero {
+    padding: 65px 20px;
+  }
+
+  .cycles-hero h1 {
+    font-size: 36px;
+  }
+
+  .cycles-hero p:last-child {
+    font-size: 16px;
+  }
+
+  .cycles-filter {
+    padding: 35px 20px;
+  }
+
+  .filter-buttons {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    min-width: auto;
+    padding: 9px 16px;
+    font-size: 13px;
+  }
+
+  .cycles-grid-section {
+    padding: 50px 20px 70px;
+  }
+
+  .cycles-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cycles-heading h2 {
+    font-size: 27px;
+  }
+
+  .cycles-grid {
+    grid-template-columns: 1fr;
+  }
+}
